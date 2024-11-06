@@ -1,0 +1,76 @@
+
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #080808af;
+    p {text-align: center;}
+}
+
+
+nav {
+    background-color: black;
+    color: #000000e0;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(37, 34, 34, 0.1);
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav li a {
+    display: block;
+    color: rgba(251, 251, 251, 0.977);
+    text-align: center;
+    padding: 12px 18px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav li a:hover {
+    background-color: black;
+    color: rgb(199, 13, 13);
+}
+
+.content {
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center; /* Center-aligns all direct content inside */
+}
+
+.center-image {
+    display: block;            /* Makes the image a block-level element */
+    margin-left: auto;         /* Centers the image horizontally */
+    margin-right: auto;
+    max-width: 100%;           /* Optional: Ensures image is responsive */
+    height: auto;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: white;
+}
+
+footer a {
+    color: #1b1919;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ff0000;
+}

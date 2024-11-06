@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.compose-container {
+    background-color: #333;
+    padding: 20px;
+    width: 400px;
+    border-radius: 8px;
+}
+.compose-container h2 {
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+.compose-container select, .compose-container input, .compose-container textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    background-color: #555;
+    color: white;
+    border: 1px solid #444;
+    border-radius: 4px;
+}
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+}
+.checkbox-container input {
+    margin-right: 8px;
+}
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+.button-container button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.button-container button.cancel {
+    background-color: #555;
+    margin-right: 8px;
+}
+.attachment-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+}
+.attachment-icons svg {
+    fill: #bbb;
+    cursor: pointer;
+}

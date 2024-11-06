@@ -1,0 +1,80 @@
+body {
+    background-image: linear-gradient(rgb(142, 206, 254), rgb(0, 0, 0));
+    background-image: url(log_in.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .box {
+    background-color: rgba(98,  222, 238, 0.6);
+    padding: 20px 100px 30px;
+    border: 5px solid rgb(142, 206, 254);
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  div h1 h3 {
+    background: linear-gradient(to right,rgb(4, 55, 103)0 0%, #8f33d1 100%);
+    background-clip: text;
+    color: transparent;
+  }
+  
+  #login-form {
+    text-align: center;
+  }
+  nav {
+    text-align: center;
+    background-color: hsl(206, 60%, 52%);
+    padding: 15px 15px 15px;
+    border-radius: 30px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    border: 5px solid #2d0c49;
+    border-radius: 30px;
+    padding: 15px 15px 15px;
+    margin:  10px;
+    display: inline-block;
+  }
+  
+  nav a:hover {
+    color: #666;
+  }
+
+  .wps {
+    position: absolute;
+    background: linear-gradient(to right,rgb(4, 55, 103)0 0%, #8f33d1 100%);
+    border-radius: 10px;
+    padding: 5px 5px 5px;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center
+    
+  }
+  .wps2 {
+    background: linear-gradient(to right,rgb(4, 55, 103)0 0%, #8f33d1 100%);
+    border-radius: 10px;
+    padding: 5px 5px 5px;
+    position: absolute;
+    top: 61%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center
+  }
+  #returnhome{
+    text-decoration: none;
+    color: #333;
+    border: 5px solid #2d0c49;
+    border-radius: 30px;
+    padding: 3px 3px 3px;
+    margin:  10px;
+    display: inline-block;
+
+  }
