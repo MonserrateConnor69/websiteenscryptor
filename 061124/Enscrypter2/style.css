@@ -126,13 +126,14 @@ box-shadow: 0 0 30px 10px rgba(98, 222, 238, 0.6);
 }
 
 .section-10 .circle {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.2); 
   font-size: 1.4rem;
   height: 70px;
   width: 78px;
   display: grid;
   place-items: center;
 }
+
 
 .section-10 .box i {
   color:rgba(98,  222, 238, 0.6);
@@ -150,3 +151,5 @@ h1 {
   color: rgba(38, 150, 150, 0.533);
   text-align: center;
 }
+
+
