@@ -1,5 +1,4 @@
 body {
-    background-image: linear-gradient(rgb(142, 206, 254), rgb(0, 0, 0));
     background-image: url(log_in.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -11,46 +10,60 @@ body {
     flex-direction: column; /* Stack sections vertically */
 }
 
-.container {
+.container, .new-images {
     margin-top: 50px; /* Adjusted space above the first set */
     width: 80%;
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin-bottom: 30px; /* Space between the first set and the second set */
+    gap: 20px;
 }
 
-.container img {
-    width: 10%;
-    height: 200px;
-    object-fit: cover;
+.card {
+    perspective: 1000px; /* Add perspective to the container */
+}
+
+.card-inner {
+    position: relative;
+    width: 200px; /* Set a fixed width for the card */
+    height: 200px; /* Set a fixed height for the card */
+    transition: transform 0.9s;
+    transform-style: preserve-3d; /* Preserve 3D for child elements */
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hide the back face */
     border-radius: 10px;
     border: 2px solid rgba(255, 255, 255, 0.6842);
-    transition: all ease-in-out 0.5s;
-}
-
-.container img:hover {
-    width: 25%;
-}
-
-/* Styles for the second set of new images */
-.new-images {
-    width: 80%;
     display: flex;
     justify-content: center;
-    gap: 20px;
-    margin-top: 30px;
+    align-items: center;
 }
 
-.new-images img {
-    width: 15%; /* Adjust the size of new images */
-    height: 200px;
+.card-front {
+    z-index: 2; /* Show front side */
+}
+
+.card-back {
+    transform: rotateY(180deg); /* Rotate back side */
+    background-color: rgba(255, 255, 255, 0.8); /* Background for back side */
+    display: flex;
+    flex-direction: column; /* Stack text vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+    padding: 10px; /* Add padding for better spacing */
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg); /* Flip the card */
+}
+
+.card img {
+    width: 100%; /* Make image fill the card */
+    height: 100%;
     object-fit: cover;
     border-radius: 10px;
-    border: 2px solid rgba(255, 255, 255, 0.6842);
-    transition: all ease-in-out 0.5s;
-}
-
-.new-images img:hover {
-    width: 20%; /* Slightly enlarge new images on hover */
 }
