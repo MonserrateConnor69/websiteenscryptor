@@ -28,7 +28,7 @@ form.addEventListener('submit', (e) => {
     const termsChecked = termsInput.checked;
 
     if (username === '1234' && password === '1234' && termsChecked) {
-        window.location.href = 'Index.html';
+        window.location.href = 'index.html';
     } else {
         alert('Invalid credentials or terms not accepted');
     }
